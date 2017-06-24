@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "57361917245",
+    "firebase_url": "https://exdeusorealtimedatabase-432f1.firebaseio.com",
+    "project_id": "exdeusorealtimedatabase-432f1",
+    "storage_bucket": "exdeusorealtimedatabase-432f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57361917245:android:2a451ce5bcdad89b",
+        "android_client_info": {
+          "package_name": "com.example.iossenac.exdeusorealtimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57361917245-pr8lp2u6g8439q9v1ktns9ocp20nb4d3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTZBRg86dhBzbxMr5yQmhnaAu2u-yv8oc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
