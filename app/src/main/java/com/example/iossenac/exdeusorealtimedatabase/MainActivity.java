@@ -19,12 +19,16 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     public static String TAG = "EXDOUSOFIREBASE";
 
     private LinearLayout ctnMain;
     public TextView textview1, textview2, textview3;
+
+    Random ran;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         textview1 = (TextView) findViewById(R.id.text1);
         textview2 = (TextView) findViewById(R.id.text2);
         textview3 = (TextView) findViewById(R.id.text3);
+
+        ran = new Random();
 
         ControlLifeCycleAllApp.myRef.child("background").addValueEventListener(new ValueEventListener() {
             @Override
@@ -70,9 +76,9 @@ public class MainActivity extends AppCompatActivity {
 
         Background background = new Background();
 
-        background.r = (int) (Math.random() * 255);
-        background.g = (int) (Math.random() * 255);
-        background.b = (int) (Math.random() * 255);
+        background.r = ran.nextInt(6) + 1;
+        background.g = ran.nextInt(6) + 1;
+        background.b = ran.nextInt(6) + 1;
 
         ControlLifeCycleAllApp.myRef.child("background").setValue(
                 background,
